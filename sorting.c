@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+//Swaps two elements
 void swap(int *x, int *y){
   int temp = *x;
   *x = *y;
@@ -20,6 +21,7 @@ void bubbleSort(int arr[], int size){
           noSwap = false;
         }
     }
+    //If no swap took place, the list is sorted and escape the loop.
     if(noSwap == true) break;
   }
 }
